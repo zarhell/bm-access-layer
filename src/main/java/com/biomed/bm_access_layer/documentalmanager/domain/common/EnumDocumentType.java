@@ -27,6 +27,12 @@ public enum EnumDocumentType {
     @JsonValue
     private Integer id;
 
+    /**
+     * Constructs an EnumDocumentType object with the specified type and ID.
+     *
+     * @param type The document type.
+     * @param id   The ID of the document type.
+     */
     private EnumDocumentType(String type, Integer id) {
         this.type = type;
         this.id = id;
@@ -40,7 +46,16 @@ public enum EnumDocumentType {
         return id;
     }
 
-    public static EnumDocumentType getDocumentKindById(final Integer id){
-        return Arrays.stream(EnumDocumentType.values()).filter(x -> x.getId().equals(id)).findFirst().orElse(null);
+    /**
+     * Retrieves the EnumDocumentType object associated with the specified ID.
+     *
+     * @param id The ID of the document type.
+     * @return The EnumDocumentType object, or null if no matching document type is found.
+     */
+    public static EnumDocumentType getDocumentTypeById(int id) {
+        return Arrays.stream(EnumDocumentType.values())
+                .filter(x -> x.getId() == id)
+                .findFirst()
+                .orElse(null);
     }
 }

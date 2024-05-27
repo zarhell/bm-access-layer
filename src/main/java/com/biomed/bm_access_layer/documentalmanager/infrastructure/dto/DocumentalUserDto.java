@@ -6,17 +6,15 @@ import com.fasterxml.jackson.databind.PropertyNamingStrategies.SnakeCaseStrategy
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 
 import lombok.Data;
+/**
+ * Represents a documental user assigned for an Document.
+ * It contains information about the user's origin code, destiny code, and lend code.
+ */
 @Data
 @JsonNaming(SnakeCaseStrategy.class)
-public class DocumentalUserDto implements Serializable {
-
-    private static final long serialVersionUID = 1L;
+public class DocumentalUserDto {
 
     private String userOriginCode;
-
     private String userDestinyCode;
-
     private String userLendCode;
-
-
 }

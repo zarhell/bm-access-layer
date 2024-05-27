@@ -1,0 +1,57 @@
+server:
+  port: ${PORT:5000}
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: password
+  sql:
+    init:
+      continue-on-error: true
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        naming:
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+          implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        id:
+          uuid_generator: org.hibernate.id.UUIDGenerator
+    hibernate:
+      ddl-auto: validate
+      use-new-id-generator-mappings: false
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    validate-on-migrate: false
+  logging:
+    level:
+      org:
+        springframework:
+          boot:
+            autoconfigure: INFO
+  cloud:
+    gcp:
+      logging:
+        enabled: false
+      trace:
+        enabled: false
+      core:
+        enabled: false
+  doc:
+    swagger-ui:
+      path: /swagger-ui-custom.html
+      operationsSorter: method
+
+fetch:
+  strategy: LOCAL # or GCP_CLOUD
+upload:
+  strategy: LOCAL # or GCP_CLOUD
+
+gcp:
+  key:
+    path: src/main/resources/gcp-key.json

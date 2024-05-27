@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://ec2-3-211-221-185.compute-1.amazonaws.com/d27cdte73davfe
+    username: nwxdzajmkyphdb
+    password: 699e6bc4d4b719383a7c25dbf0e9b9d36125af7b8611e6ba8e58b7e09107c274
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+server:
+  port: 5000
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfigure: ERROR
+springdoc:
+  swagger-ui:
+    path: /swagger-ui-custom.html
+    operationsSorter: method

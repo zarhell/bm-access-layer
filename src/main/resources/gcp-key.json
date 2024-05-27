@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mintinc-tripulantes10",
+  "private_key_id": "0f64a668802575ef30c986fef39ee1ec9d6137d9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCLzN64GxNjOg2m\n1LVllAfnNnCgLjV2lIt9IdUfRNh/Q9s7J6KfpLldt+Apnr6k0CwbwMkD5v+aKOHH\ncfDDfsWcOP6hkB7T/h08zjgtTHr7b+3RhLMiLYePILkBeJJbXF5aYRCHhT8EnOKt\nczQTGqw5AZqcZi/RF965cTbn+EsXAsheK/ZtC9Z1T++wdEnxnLapHGjeqsOwmM2W\nVnasE1VYinY33iCHwPayk3s75aWmHRFsuLMhFqmsqKrCx2ulDeapJKnuw10Vn3gT\nSxE1yS54oCobTjuuEDUWIivYsJWRHEB+JnGLgir4bvLl2zsPEX77oyNmtAyZI717\nfFirE9WzAgMBAAECggEALQSb881EQP/AxahZgYxZvyrYubwnmzfac0Eh0B/rV5AS\nWMo6pA33YyaDGOP1oD0o9wbttEP+qzXe/srCLTH1kIkJ9hzi0IFUCPCfRncKY013\n17BTvv3KWVzANqkM+D6WY6Q+HmXaFTIwDIq8iipcqz7I+vQtEbgOEMlUVP6vr4jL\n+wqOwlqh/ANwJhsUl5127VFs2khsVoOPnebIpjg9swQ3tBZT9LQ7vvoPyxdZ2HIN\nX6YtuXMz8QKr+coRAFTdElxziHv5no3bx8wE612+uwZBSR/bYI6Nrp9ojRPQmIZ1\ngAj4/tgQeX+5vo54WTiAimekGnDIwLuoUKrT2aK8gQKBgQDCRrjR59pL/MofRppb\nseFVY3mSwzHQSXWtCgIJ0N0eiPQDKJr8pgFIRE6s/StRrTRBUCqYF6TPQjIHbNcY\n1hIuuZ7q++x0mt8rZjZ1+JVOtb8SNEGhI4yWO49QYoZA1saN2syzYD5KGvoG1ujZ\nfXissetgFsaN0ZXEqT0qzG03FQKBgQC4N2UMr2PzZBPukz/j7f8iQdjc89CY+LQJ\nC8RVaH7y8CvEFkX0MmOtzz3VXRzdMaHmmty+EvGX/LlwuNl8Bdat8xg1q2vw5D5U\nkKY2B8vqVGI0ooXaY/bt4ZiXxJ7PoQSX+C9SjOC1XujySjzTmSfwVgpEjGxjlskO\n/eDMYlsLpwKBgQCHmvfMxIpSOfwXgp+h23LOuGWWtJrjqTLzeqXblieR9cRlJAWy\nzmjcuZk1FG4VT9HGuR9SFEbcyHbFSgqF8n60kKpFmVz+M1ANKgZfqAkH7MKXAVTC\nFl8+SgqJ8IuHXKMxRwVVO5ue/F+DQKU9kmAWIwaJhrxHJ4DjycHBSvn81QKBgGv4\nq9V/h0nEwpn23F+vwvZFOeJnVUATpRIYP37/vEiP1Fcd5up2Dk51RXylEqHi0U3k\nPrV5TPkUO2yCK5axpV5XOT1bt+x9Grtd/M12TGKQCu9mwqV6KeTLcTCjIaH4ckTQ\nRoxP3fTwKAC62mP7RJltFJ+Q3oaQfk+3JeclTs/JAoGASeMiz9HVTUH1/ctC75k9\nO4dD6d2AiKSUtSFvgL+JcOuRBnqUaaSjNSMKwMfq+u7dNFWlvjRd8YLil9zD/59b\nEpNOYeteCNlytXbZDjLmEty0wrEba7gQqZoCv5+JK2B6JMMN9IaV0nrAwy//3Sxs\nVwHs/qpzjnyVa1tfIhPiENQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "tripulantes10@mintinc-tripulantes10.iam.gserviceaccount.com",
+  "client_id": "118370698880355413114",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tripulantes10%40mintinc-tripulantes10.iam.gserviceaccount.com"
+}
