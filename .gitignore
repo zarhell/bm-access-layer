@@ -1,6 +1,6 @@
 HELP.md
 .gradle
-!**/src/main/resources/gcp-key.json
+!**/src/main/resources/git rgcp-key.json
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
