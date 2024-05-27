@@ -1,5 +1,3 @@
-Aquí tienes el archivo README corregido y mejorado para mayor claridad y precisión:
-
 # BIOmed Back End
 
 ## Herramientas de Desarrollo Empleadas
@@ -23,7 +21,6 @@ Aquí tienes el archivo README corregido y mejorado para mayor claridad y precis
 
 ### Despliegue en Producción
 
-
 ## Requisitos para Construir y Ejecutar la Aplicación
 - [JDK 17](https://www.oracle.com/java/technologies/downloads/#java17)
 - [Gradle](https://gradle.org/install/)
@@ -35,8 +32,8 @@ Aquí tienes el archivo README corregido y mejorado para mayor claridad y precis
 ## Pasos para Abrir el Proyecto
 
 1. Abrir y configurar VS Code con las siguientes extensiones:
-    - [Spring Boot Extension Pack](https://marketplace.visualstudio.com/items?itemName=Pivotal.vscode-boot-dev-pack)
-    - [Language Support for Java(TM) by Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.java)
+   - [Spring Boot Extension Pack](https://marketplace.visualstudio.com/items?itemName=Pivotal.vscode-boot-dev-pack)
+   - [Language Support for Java(TM) by Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.java)
 
 2. En la línea de comandos de la terminal de su elección ejecutar:
     ```sh
@@ -50,11 +47,11 @@ Aquí tienes el archivo README corregido y mejorado para mayor claridad y precis
 
 4. En la línea de comandos de la terminal de su elección ejecutar:
     ```sh
-    mvn clean install -DskipTests
+    ./run_app.sh
     ```
 
 5. En VS Code:
-    - Presionar F5 o utilizar el botón "Run" del Spring Boot Dashboard en el Explorador de VS Code
+   - Presionar F5 o utilizar el botón "Run" del Spring Boot Dashboard en el Explorador de VS Code
 
 ## Para Probar el Proyecto
 
@@ -102,4 +99,29 @@ curl --location --request PUT 'https://tripulantes.herokuapp.com/api/document/1a
 #### /api/download-document
 ```sh
 curl --location --request GET 'http://localhost:8080/api/document/?storage_id=759444949&user_lend_code="zrz_lend_code"'
+```
+
+### Ejecutar el Script run_app.sh
+
+Para ejecutar la aplicación utilizando el script `run_app.sh`, sigue estos pasos:
+
+1. Asegúrate de que el script `run_app.sh` tenga permisos de ejecución. Si no, puedes otorgarlos con el siguiente comando:
+    ```sh
+    chmod +x run_app.sh
+    ```
+
+2. Ejecuta el script desde la línea de comandos:
+    ```sh
+    ./run_app.sh
+    ```
+
+El script `run_app.sh` debe contener los comandos necesarios para construir y ejecutar la aplicación. A continuación, se muestra un ejemplo de cómo podría ser el contenido de `run_app.sh`:
+
+```sh
+#!/bin/bash
+echo "Cleaning and building the project..."
+./gradlew clean build -x test
+
+echo "Running the application..."
+./gradlew bootRun
 ```
